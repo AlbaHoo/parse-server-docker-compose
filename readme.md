@@ -1,14 +1,17 @@
 # parse-server-docker-compose
 
-This repo will run:
+# Intro
 
+Official parse-server doesn't support alicloud oss as file storage. This repo add a commiunity npm package `parse-server-oss-adapter` into the default parse-server image and run with customize ENVs.
+
+# Resource used in this repo:
 1. [parseplatform/parse-server](https://hub.docker.com/r/parseplatform/parse-server)
-2. [file adapter: cnneter/parse-server-oss-adapter] (https://github.com/cnneter/parse-server-oss-adapter)
+2. [file adapter: cnneter/parse-server-oss-adapter](https://github.com/cnneter/parse-server-oss-adapter)
 
-# Requirements:
+# Tool requied to run this repo:
 
-1. docker
-2. docker-compose
+1. `docker`
+2. `docker-compose`
 
 # ENV:
 
@@ -22,4 +25,4 @@ This repo will run:
 
     docker-compose up -d
 
-    docker compose up -d (ubuntu2004)
+    docker compose up -d (ubuntu1804)
