@@ -5,6 +5,7 @@ services:
     environment:
       - PARSE_SERVER_APPLICATION_ID=parse
       - PARSE_SERVER_MASTER_KEY=${PARSE_SERVER_MASTER_KEY-parse@master123!}
+      - PARSE_SERVER_REST_API_KEY=${PARSE_SERVER_REST_API_KEY-super_token}
       - PARSE_SERVER_DATABASE_URI=${PARSE_SERVER_DATABASE_URI-postgres://Alba@host.docker.internal/parse_server_development}
       - PARSE_SERVER_MOUNT_PATH=/parse
       - PARSE_SERVER_FILES_ADAPTER=parse-server-oss-adapter2
